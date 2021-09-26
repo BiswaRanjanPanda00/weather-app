@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.app {
+    background-image: url(./assets/Winter.jfif);
+    background-size: cover;
+    background-position: bottom;
+    transition: 0.4s ease-out;
+}
+
+.app.warm {
+    background-image: url(./assets/Summer.jfif);
+}
+
+main {
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.1),rgba(0,0,0,0.6));
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchbox {
+    width: 100%;
+    margin: 0 0 75px;
+}
+
+.searchbox .searchbar {
+    width: 100%;
+    display: block;
+    padding: 20px;
+    border-radius: 6px;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255 ,255 , 0.5);
+    box-shadow: rgba(0,0,0,0.4);
+
+    font-size: large;
+    transition: 0.4s ease;
+}
+
+.searchbox .searchbar:focus {
+    background-color: rgba(255, 255 ,255 , 0.75);
+}
+
+.location {
+    text-align: center;
+}
+
+.weatherbox {
+    text-align: center;
+}
+
+.locationbox .date,.location {
+    color: #FFF;
+}
+
+.weatherbox .temp {
+    margin: 20px auto;
+    border-radius: 4px;
+    color: #FFF;
+    padding: 10px 20px;
+    font-size: 90px;
+    background-color: rgba(255, 255 ,255 , 0.2);
+}
+
+.weather {
+    color: #FFF;
+}
